@@ -1,6 +1,6 @@
 ﻿namespace CSharpEgitimKampiFinansalCrm
 {
-    partial class Form1
+    partial class FrmDashboard
     {
         /// <summary>
         /// Required designer variable.
