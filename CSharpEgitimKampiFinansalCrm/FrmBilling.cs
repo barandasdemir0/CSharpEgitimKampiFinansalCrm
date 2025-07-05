@@ -90,5 +90,26 @@ namespace CSharpEgitimKampiFinansalCrm
 
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmBanks frm = new FrmBanks();
+            frm.Show();
+        
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmDashboard frmDashboard = new FrmDashboard();
+            frmDashboard.Show();
+       
+        }
     }
 }
