@@ -49,10 +49,10 @@ namespace CSharpEgitimKampiFinansalCrm
 
         private void button6_Click(object sender, EventArgs e)
         {
-            this.Hide();
             FrmDashboard frmDashboard = new FrmDashboard();
             frmDashboard.Show();
-            
+            this.Hide();
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -62,12 +62,16 @@ namespace CSharpEgitimKampiFinansalCrm
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            Login log_Out = new Login();
+            log_Out.Show();
+            this.Hide();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            FrmSettings settings = new FrmSettings();
+            settings.Show();
+            this.Hide();
         }
 
         private void groupBox4_Enter(object sender, EventArgs e)
@@ -77,25 +81,32 @@ namespace CSharpEgitimKampiFinansalCrm
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            FrmBilling frmBilling = new FrmBilling();
+            frmBilling.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            FrmSpending spending = new FrmSpending();
+            spending.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
+          
             FrmBilling frmBilling = new FrmBilling();
             frmBilling.Show();
-         
+            this.Hide();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            FrmCategories categories = new FrmCategories();
+            categories.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)

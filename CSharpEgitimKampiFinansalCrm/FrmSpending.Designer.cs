@@ -1,6 +1,6 @@
 ﻿namespace CSharpEgitimKampiFinansalCrm
 {
-    partial class FrmBilling
+    partial class FrmSpending
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -38,13 +39,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnadd = new System.Windows.Forms.Button();
             this.btnlist = new System.Windows.Forms.Button();
-            this.txtperiot = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtamount = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,33 +55,37 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.panel2.SuspendLayout();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // timer1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(82, -1);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Ödeme Formu";
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
             // 
-            // panel2
+            // panel1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(2, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1026, 28);
-            this.panel2.TabIndex = 6;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(138)))), ((int)(((byte)(250)))));
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(3, 30);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(309, 605);
+            this.panel1.TabIndex = 14;
             // 
             // button8
             // 
@@ -130,7 +137,6 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Banka Hareketleri";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -184,30 +190,52 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(138)))), ((int)(((byte)(250)))));
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(2, 31);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(309, 605);
-            this.panel1.TabIndex = 5;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(3, 1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1026, 28);
+            this.panel2.TabIndex = 15;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(82, -1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(190, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Dashboard Formu";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.dataGridView1);
+            this.panel4.Location = new System.Drawing.Point(315, 328);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(710, 391);
+            this.panel4.TabIndex = 17;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(710, 391);
+            this.dataGridView1.TabIndex = 0;
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.dateTimePicker1);
             this.panel3.Controls.Add(this.btnupdate);
             this.panel3.Controls.Add(this.btndelete);
             this.panel3.Controls.Add(this.btnadd);
             this.panel3.Controls.Add(this.btnlist);
-            this.panel3.Controls.Add(this.txtperiot);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.txtamount);
             this.panel3.Controls.Add(this.label4);
@@ -215,15 +243,14 @@
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.txtid);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(318, 36);
+            this.panel3.Location = new System.Drawing.Point(315, 45);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(700, 203);
-            this.panel3.TabIndex = 7;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            this.panel3.Size = new System.Drawing.Size(700, 265);
+            this.panel3.TabIndex = 16;
             // 
             // btnupdate
             // 
-            this.btnupdate.Location = new System.Drawing.Point(535, 146);
+            this.btnupdate.Location = new System.Drawing.Point(535, 195);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(146, 43);
             this.btnupdate.TabIndex = 11;
@@ -233,7 +260,7 @@
             // 
             // btndelete
             // 
-            this.btndelete.Location = new System.Drawing.Point(383, 147);
+            this.btndelete.Location = new System.Drawing.Point(383, 196);
             this.btndelete.Name = "btndelete";
             this.btndelete.Size = new System.Drawing.Size(146, 43);
             this.btndelete.TabIndex = 10;
@@ -243,7 +270,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(231, 147);
+            this.btnadd.Location = new System.Drawing.Point(231, 196);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(146, 43);
             this.btnadd.TabIndex = 9;
@@ -253,7 +280,7 @@
             // 
             // btnlist
             // 
-            this.btnlist.Location = new System.Drawing.Point(79, 147);
+            this.btnlist.Location = new System.Drawing.Point(79, 196);
             this.btnlist.Name = "btnlist";
             this.btnlist.Size = new System.Drawing.Size(146, 43);
             this.btnlist.TabIndex = 8;
@@ -261,23 +288,15 @@
             this.btnlist.UseVisualStyleBackColor = true;
             this.btnlist.Click += new System.EventHandler(this.btnlist_Click);
             // 
-            // txtperiot
-            // 
-            this.txtperiot.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtperiot.Location = new System.Drawing.Point(101, 113);
-            this.txtperiot.Name = "txtperiot";
-            this.txtperiot.Size = new System.Drawing.Size(580, 27);
-            this.txtperiot.TabIndex = 7;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.Location = new System.Drawing.Point(29, 118);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 19);
+            this.label5.Size = new System.Drawing.Size(63, 19);
             this.label5.TabIndex = 6;
-            this.label5.Text = "Periyot : ";
+            this.label5.Text = "zaman : ";
             // 
             // txtamount
             // 
@@ -329,56 +348,63 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.Location = new System.Drawing.Point(11, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 19);
+            this.label2.Size = new System.Drawing.Size(95, 19);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Ödeme Id : ";
+            this.label2.Text = "Harcama Id : ";
             // 
-            // panel4
+            // dateTimePicker1
             // 
-            this.panel4.Controls.Add(this.dataGridView1);
-            this.panel4.Location = new System.Drawing.Point(318, 245);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(710, 391);
-            this.panel4.TabIndex = 8;
+            this.dateTimePicker1.Location = new System.Drawing.Point(99, 114);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(582, 20);
+            this.dateTimePicker1.TabIndex = 12;
             // 
-            // dataGridView1
+            // comboBox1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(710, 391);
-            this.dataGridView1.TabIndex = 0;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(101, 150);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(580, 21);
+            this.comboBox1.TabIndex = 13;
             // 
-            // FrmBilling
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label6.Location = new System.Drawing.Point(17, 150);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 19);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Kategori : ";
+            // 
+            // FrmSpending
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1030, 649);
+            this.ClientSize = new System.Drawing.Size(1053, 723);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmBilling";
+            this.Name = "FrmSpending";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmBilling";
-            this.Load += new System.EventHandler(this.FrmBilling_Load);
+            this.Text = "Spending";
+            this.Load += new System.EventHandler(this.FrmSpending_Load);
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
@@ -387,21 +413,24 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.Button btnlist;
-        private System.Windows.Forms.TextBox txtperiot;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtamount;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txttitle;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtid;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

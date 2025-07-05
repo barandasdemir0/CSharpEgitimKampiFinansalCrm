@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
@@ -59,8 +59,8 @@
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -103,6 +103,7 @@
             this.button8.TabIndex = 5;
             this.button8.Text = "Çıkış Yap";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -115,6 +116,7 @@
             this.button7.TabIndex = 6;
             this.button7.Text = "Ayarlar";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -127,6 +129,7 @@
             this.button6.TabIndex = 5;
             this.button6.Text = "Dashboard";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -139,6 +142,7 @@
             this.button5.TabIndex = 4;
             this.button5.Text = "Banka Hareketleri";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -151,6 +155,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Giderler";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -189,6 +194,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Kategoriler";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -311,33 +317,33 @@
             // 
             // chart1
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea9.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.chart1.Legends.Add(legend9);
             this.chart1.Location = new System.Drawing.Point(318, 304);
             this.chart1.Name = "chart1";
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
+            series9.ChartArea = "ChartArea1";
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            this.chart1.Series.Add(series9);
             this.chart1.Size = new System.Drawing.Size(332, 315);
             this.chart1.TabIndex = 10;
             this.chart1.Text = "chart1";
             // 
             // chart2
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart2.Legends.Add(legend6);
+            chartArea10.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.chart2.Legends.Add(legend10);
             this.chart2.Location = new System.Drawing.Point(669, 304);
             this.chart2.Name = "chart2";
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series6.Legend = "Legend1";
-            series6.Name = "Faturalar";
-            this.chart2.Series.Add(series6);
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series10.Legend = "Legend1";
+            series10.Name = "Faturalar";
+            this.chart2.Series.Add(series10);
             this.chart2.Size = new System.Drawing.Size(332, 315);
             this.chart2.TabIndex = 11;
             this.chart2.Text = "chart2";
@@ -350,14 +356,6 @@
             this.panel3.Size = new System.Drawing.Size(331, 135);
             this.panel3.TabIndex = 12;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(669, 162);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(331, 135);
-            this.panel4.TabIndex = 13;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -369,6 +367,14 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Bankalar Ve Bankalardaki \r\nPara Miktarlarına Aşağıdaki \r\ngrafikten ulaşabilirsini" +
     "z ";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Location = new System.Drawing.Point(669, 162);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(331, 135);
+            this.panel4.TabIndex = 13;
             // 
             // label4
             // 
